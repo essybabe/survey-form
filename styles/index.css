@@ -33,13 +33,20 @@ button,
 textarea,
 select {
   font: inherit;
+  background-color: powderblue;
+  color: rgb(33, 9, 56);
 }
 
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   background-color: white;
+  background-image:url(https://www.stutern.com/images/logo/Stutern_Logo_Xmas.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
+
 
 /*
   8. Avoid text overflows
@@ -52,25 +59,49 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
+  ;
 }
 
 /* SURVEY FORM STYLES */
-
+h1{
+  text-align: center;
+  font-size: 30px;
+  color: maroon;
+  margin-bottom: 20px;
+}
 form {
     background-color: aqua;
     margin: 0 auto;
     max-width: 600px;
     padding: 30px;
-  }
+    box-shadow: 5px 5px 8px blue, 10px 10px 8px red, 15px 15px 8px green;
+  
+}
 
 .form-control {
   text-align: left;
   margin-bottom: 24px;
+  ;
 }
 
 .form-control label {
   display: block;
   margin-bottom: 10px;
+  color:maroon;
+  font-size: 20px;
+  font-weight: bolder;
+  border-radius: 50px;
+  
+}.form-control button{
+  padding: 15px;
+  background-color: red;
+  color: white;
+  border-radius: 50px;
+  position: relative;
+  left: 30%;
+  border: 2px;
+  cursor: pointer;
+  width: auto;
 }
 
 
@@ -82,10 +113,12 @@ form {
   border-radius: 5px;
   padding: 10px;
   width: 95%;
+  
 }
 
 .form-control input[type="radio"],
 .form-control input[type="checkbox"] {
   display: inline-block;
   width: auto;
+  margin: 5px;
 }
